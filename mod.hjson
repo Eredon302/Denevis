@@ -1,1 +1,6 @@
-
+name: "Denevis"
+author: "Eredon302"
+description: "Write this later im mod hjson im too lazy"
+version: "1.0"
+main: "mindustry.mod.Denevis"
+minGameVersion: 146
