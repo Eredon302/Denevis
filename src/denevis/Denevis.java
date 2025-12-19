@@ -11,7 +11,7 @@ import mindustry.ui.dialogs.*;
 
 public class Denevis extends Mod{
 
-    public ExampleJavaMod(){
+    public Denevis(){
         Log.info("Loaded ExampleJavaMod constructor.");
 
         //listen for game load event
