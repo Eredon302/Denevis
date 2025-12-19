@@ -1,4 +1,4 @@
-package example;
+package denevis;
 
 import arc.*;
 import arc.util.*;
