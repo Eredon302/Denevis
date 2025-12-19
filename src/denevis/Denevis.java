@@ -20,9 +20,9 @@ public class Denevis extends Mod{
             Time.runTask(10f, () -> {
                 BaseDialog dialog = new BaseDialog("frog");
                 dialog.cont.add("behold").row();
-                //mod sprites are prefixed with the mod name (this mod is called 'example-java-mod' in its config)
-                dialog.cont.image(Core.atlas.find("example-java-mod-frog")).pad(20f).row();
-                dialog.cont.button("I see", dialog::hide).size(100f, 50f);
+                //mod sprites are prefixed with the mod name (this mod is called 'denevis' in its config)
+                dialog.cont.image(Core.atlas.find("denevis-frog")).pad(20f).row();
+                dialog.cont.button("Get out mane", dialog::hide).size(200f, 50f);
                 dialog.show();
             });
         });
