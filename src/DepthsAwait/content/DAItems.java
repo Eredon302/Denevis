@@ -4,10 +4,7 @@ import mindustry.type.Item;
 
 public class DAItems {
 
-    public static Item rhodite;
-    public static Item thaumium;
-    public static Item basalticResidue;
-    public static Item lithium;
+    public static Item rhodite, thaumium, basalticResidue, lustreblend, lithium;
     //TODO maybe also add magnetite for something and also figure out how to color item filters
 
     public static void load(){
@@ -24,6 +21,10 @@ public class DAItems {
 
         basalticResidue = new Item("basalticResidue"){{
            alwaysUnlocked = true;
+        }};
+
+        lustreblend = new Item("lustreblend"){{
+            alwaysUnlocked = true;
         }};
 
         lithium = new Item("lithium"){{

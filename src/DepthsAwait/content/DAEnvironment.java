@@ -18,6 +18,8 @@ public class DAEnvironment {
 
             speedMultiplier = 0.6f;
             status = melting;
+
+            variants = 1;
         }};
 
     }

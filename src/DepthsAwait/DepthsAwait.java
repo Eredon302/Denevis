@@ -29,6 +29,8 @@ public class DepthsAwait extends Mod {
     }
     */
 
+    // TODO add a gray-orange goop magma shader (slag shader code git)
+
     @Override
     public void loadContent(){
         DAUnits.load();

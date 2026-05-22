@@ -6,6 +6,7 @@ import mindustry.type.*;
 import mindustry.world.Block;
 import mindustry.world.blocks.distribution.*;
 import mindustry.world.blocks.liquid.Conduit;
+import mindustry.world.blocks.production.GenericCrafter;
 import mindustry.world.blocks.storage.*;
 
 import static mindustry.type.ItemStack.with;
@@ -18,6 +19,7 @@ public class DABlocks {
     //Liquids
     public static Block fluidChannel, magmaTap;
     //Production
+    public static Block lustrousCrucible;
     //Turrets
     //Walls
     //Units
@@ -60,6 +62,7 @@ public class DABlocks {
             requirements(Category.distribution, with(DAItems.rhodite, 2));
             health = 100;
             speed = 3f;
+            squareSprite = false;
             alwaysUnlocked = true;
         }};
 
@@ -129,9 +132,17 @@ public class DABlocks {
             }
         };
 
-        // TODO make the magmaTap work as well as the liquid, channel rendering and the magmaTile
-
         //Production
+
+        lustrousCrucible = new GenericCrafter("lustrousCrucible"){{
+            requirements(Category.production, with(DAItems.rhodite, 80, DAItems.thaumium, 100));
+            health = 320;
+            size = 3;
+
+            consumeItems(with(DAItems.rhodite, 2, DAItems.basalticResidue, 2));
+            outputItem = new ItemStack(DAItems.lustreblend, 4);
+            craftTime = 180f;
+        }};
 
         //Turrets
 
